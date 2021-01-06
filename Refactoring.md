@@ -183,3 +183,23 @@
     - Moving of a lot of data, letting a class only filled with a single call of other method.
 - Solving:
     - Simply remove that middle-mad and call directly what you need.
+
+## [Therapeutic Refactoring](https://www.youtube.com/watch?v=J4dlF0kcThQ)
+
+The code can be really messy; Long functions, no documentation, no tests and so on. Here are some steps and tips on how to refactor code:
+- First of all try to run and see if there comes any errors or if you can run that code right.
+- After you understand how it is working and what is it doing make the tests for it and for it's functionalities.
+- Get rid of useless comments if you have the tests ready. Inside the tests should be clear what that code will do.
+- Extract code in different functions/methods and name it correctly after what they do.
+- Be careful with local variables and declare them only where are necessarily needed.
+- Maybe there are better solutions to implement in some cases, pay attention to details in the code you refactor
+- Comments should not be present in the code only where is very necessarily, for instance the run of some tests that need to be tested with specific values or where is used a strange math equation or where versioning is done on file. In rest, the code should be self-explanatory
+- Don't comment code that is unused
+- Take care at white spaces
+- Remove useless noise dependencies that are not used and just declared
+
+How refactoring will impact you:
+- it will lead to a good design in the app
+- the code will run easier
+- makes the app easier to be read and to be understood
+- you'll be happier seeing that the code can be written in a better and cleaner way
