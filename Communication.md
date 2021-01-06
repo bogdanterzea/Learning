@@ -67,3 +67,18 @@ Solutions:
 - Always describe the main problem, not the solution you think will solve it.
 - Be ready to provide many details about it.
 - Share with others what you already tried to use
+
+## [Explain effectively](https://www.techrepublic.com/blog/10-things/10-ways-to-explain-things-more-effectively/)
+Tips to explain effectively:
+- don't get angry when someone is asking questions and be happy because that person is interested.
+- when you're in a group presentation and someone is asking you a question, you may repeat the question to be sure that everybody understood that question.
+- people may have a different picture of a problem so take in mind others point of view.
+- always use understandable terms .
+- take care at acronyms because those can mean different things
+- formulate the answers not too simple but not to complicated to be understood.
+- ask questions to understand people understanding of the problem.
+- focus on benefits, not on features of the technology.
+- Take examples from real life to make concepts and the things you explain clearer. Use analogies.
+- when explaining something new, use comparation. Compare the new features inside an app with the old ones to make a good explanation.
+- use subsets and supersets concepts.
+- ask the interlocutor if you provided them the right answer or if you were helpful. Make sure they understood your explanation.
