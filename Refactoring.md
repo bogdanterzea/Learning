@@ -155,3 +155,31 @@
     - Remove unused methods
     - Delete useless fields
     - Delete extra parameters from functions
+
+### [Couplers](https://refactoring.guru/refactoring/smells/couplers)
+
+#### Feature envy
+- Reason:
+    - It appears when fields are moved to a data class. More method may access data from other object than it's own data.
+- Solving:
+    - Keep things in the same place, don't split them when changes occurs
+    - If it's necessarily to move something like a method...make sure you take all dependencies with it. Or be sure you calculate everything.
+
+#### Inappropriate intimacy
+- Reason:
+    - When a class has too much information about everything. Classes should be small and own their purpose only.
+- Solving:
+    - Don't keep code specific only for one class in it's superclass.
+
+#### Message chains
+- Reason:
+    - When an object needs to return something from another object and that object from other object some data.
+- Solving:
+    - Think why that chain occurs; maybe you can extract data in a method or maybe the last object used may not do anything else and can be remove and that small data moved.
+
+#### Middle man
+- Reason:
+    - Elimination of big portions of code.
+    - Moving of a lot of data, letting a class only filled with a single call of other method.
+- Solving:
+    - Simply remove that middle-mad and call directly what you need.
