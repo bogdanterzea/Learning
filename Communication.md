@@ -55,3 +55,15 @@ How to improve others the active-listening ability:
 - control your time...try to use a timer to make sure you're in time allocated.
 - to make people remember something, say it slowly and let that sink for a moment
 - "they might forget what you said but they'll never forget the way you made them feel" -- Maya Angelou
+
+## [The XY problem](http://xyproblem.info/)
+How it occurs:
+- the user is asking about the solutions that he thinks will solve the problem instead of asking about the problem and then proposing a solution.
+- user doesn't know how y should work either
+- others will try to help with y but that's not the real problem
+- people get stuck on their solution which may not be good
+
+Solutions:
+- Always describe the main problem, not the solution you think will solve it.
+- Be ready to provide many details about it.
+- Share with others what you already tried to use
