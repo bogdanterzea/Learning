@@ -82,3 +82,12 @@ Tips to explain effectively:
 - when explaining something new, use comparation. Compare the new features inside an app with the old ones to make a good explanation.
 - use subsets and supersets concepts.
 - ask the interlocutor if you provided them the right answer or if you were helpful. Make sure they understood your explanation.
+
+## [Good questions](https://www.lifehack.org/articles/communication/how-amazingly-good-asking-questions.html)
+How to ask good questions:
+- make sure you ask the question in the right context
+- make sure the people you ask know what you want from them (answer/opinion/judgment)
+- Don't ask yes/no questions. Those are always misleading
+- Use follow-up questions if it's possible; That's how you can get a better insight of the problem form the person you ask.
+- Don't interrupt the person who's talking, even if their answer may not be helpful, let the person finish their thoughts. After that ask another question that is on subject.
+- Good answers comes from good questions.
