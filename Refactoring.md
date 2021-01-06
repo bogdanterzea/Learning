@@ -103,3 +103,55 @@
     - creating a lot of subclasses of subclasses when new features appears inside the app.
 - Solving:
     - Extract all duplicated code inside a superclass and if it's possible remove all empty/poor used subclasses.
+
+### [Dispensables](https://refactoring.guru/refactoring/smells/dispensables)
+
+#### Comments:
+- How it appears:
+    - all comments appears where developers thinks the code it's hard to understand
+- Solving:
+    - Better naming of functions or variables; Make them self-explanatory
+    - if a comment describes what some lines of code does; just move those lines in a function and name that function with what action happens in there.
+    - make the code more intuitive...not long and covered with comments
+
+#### Duplicate Code:
+- How it appears:
+    - When more programmers develop similar functionalities
+    - Wrong naming for functions with same functionality
+    - "Novice rush"-> copy-paste existing parts to make a similar functionality, instead of creating a superclass for common functionalities.
+- Solving:
+    - Extract methods for similar code, and call that method in both places with different parameters
+    - if two subclasses have same code, extract it in a superclass.
+    - for duplicate code similar but not fully identical, move the identical code in a method and call it from there.
+
+#### Lazy Class:
+- How it appears:
+    - When cleaning and refactoring code, some functions may become very small.
+    - Classes that were defined for future development but never finished.
+- Solving:
+    - if a class is too small and does only one or two things; that functionality may be moved in another class.
+    - for a subclass that does basically the same thing that already exists in it's superclass....just use the superclass functionality and remove the subclass.
+
+#### Data Class:
+- How it appears:
+    - A newly created class that may contain only fields and no operations inside.
+- Solving:
+    - if inside the class are public fields, make them private and create getters and setters to access them
+    - search where is that class accessed and maybe some functions that access that class may be encapsulated in that class
+    - after you populate the class with specific functions, get rid of old functions that program used and use those from inside the class.
+
+#### Dead code:
+- How it appears:
+    - Variables/parameters/fields/methods left unused after changes inside the project
+- Solving:
+    - Delete all unused things
+    - Fix functions by removing parameter that is no longer needed
+
+#### Speculative generality
+- How it appears:
+    - Parts of code created "just in case", for future.
+- Solving:
+    - Remove unused abstract classes
+    - Remove unused methods
+    - Delete useless fields
+    - Delete extra parameters from functions
