@@ -55,8 +55,8 @@
 - How it appears:
     - handling a lot of cases in a single function with a switch
 - Solving:
-    - if inside the switch is used moostly the same function with different parameters, create different functions for those parameters and remove or change the switch accordingly.
-    - if it's posible move it inside the right class; where it is used the moost.
+    - if inside the switch is used mostly the same function with different parameters, create different functions for those parameters and remove or change the switch accordingly.
+    - if it's possible move it inside the right class; where it is used the most.
     - use null as a default if one of switch cases returns a null object.
 
 #### Temporary field:
@@ -80,4 +80,26 @@
 - Solving:
     - make all namings clear and describe exactly what it does.
     - extract common used code inside a superclass for both classes.
-    - delete one of the clases if the code is all duplicated and if you can incorporate everything inside one class.
+    - delete one of the classes if the code is all duplicated and if you can incorporate everything inside one class.
+
+### [Change preventers](https://refactoring.guru/refactoring/smells/change-preventers)
+
+#### Divergent charge:
+          - How it appears:
+                    - when something small needs to change, the developer has to change a lot of data in a lot of methods and classes.
+                    - a lot of copy-pasted code-poor programming :(
+          - Solving:
+                    - Create inheritance between classes to reduce duplicated code and have a better control over them.
+
+#### Shotgun surgery
+          - How it appears:
+                    - a single responsability splited up inside more classes
+          - Solving:
+                    - move the behaviors where those are mostly used and try to clean overcharged classes.
+                    - if a class remains almost empty, maybe is better to find a solution to get rid of it.
+
+#### Hierarchies:
+          - How it appears:
+                    - creating a lot of subclasses of subclasses when new features appears inside the app.
+          - Solving:
+                    - Extract all duplicated code inside a superclass and if it's possible remove all empty/poor used subclasses.
