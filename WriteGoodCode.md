@@ -28,4 +28,68 @@
  - Don't use numbers in names
  - Be consistent (don't use begin/end in one place, start/finish in another, etc.)
 
-### [Bad and unmaintainable code](https://github.com/Droogans/unmaintainable-code)
+### [Naming is everything](https://jasonroelofs.com/articles/2012/10/01/naming-is-everything/)
+- Software development is split into two processes: Informing other programmers what the computer is doing and telling the computer what to do.
+- It may be easy to tell a computer what to do with x.y = z but think about the future developer, or your colleagues.
+- People will look a lot over code without modifying it. Keep that in your mind.
+- Even simple methods are more understandable with good naming.
+
+Example:
+```
+def copy(x, y)
+  x.member1 = y.member1
+  x.member2 = y.member2
+end
+```
+After good naming:
+```
+def copy(from, to)
+  to.member1 = from.member1
+  to.member2 = from.member2
+end
+```
+
+With good naming, the method looks a lot easier and understandable. Every variable is clear and the actions inside are descriptive
+
+#### Parameters and Variables
+- we don't want to use to general names and we want to be specific with what data we use around the functions.
+- don't be afraid to be explicit with your names. They don't have to be small, they can be composed by 2-3-4 or how many words you need to make its scope clear.
+
+#### Methods and functions
+- methods names should show clearly what they do or return.
+
+#### Constructors
+
+- They help you and other developers to create code that will make its intentions and usability more visible and intuitive.
+
+Example:
+```
+class ListMessages
+
+  def self.received_by(user)
+    new(:received, user)
+  end
+
+  def self.sent_to(user)
+    new(:sent, user)
+  end
+
+  def initialize(sent_or_received, user)
+    @messages = Message.send("#{sent_or_received}_by", user)
+  end
+end
+````
+Now look how messages are created:
+```
+messages = ListMessages.sent_to(user)
+```
+VS
+```
+messages = ListMessages.new(:sent, user)
+```
+
+#### Behavioral naming and consistency
+- When adding new variables, make sure they do what they pretend to do.
+- Make sure every time that your code is consistent and the naming pattern is respected.
+
+###### Here is a long and detailed lesson about [Bad and unmaintainable code](https://github.com/Droogans/unmaintainable-code)
