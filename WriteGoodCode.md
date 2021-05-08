@@ -92,4 +92,43 @@ messages = ListMessages.new(:sent, user)
 - When adding new variables, make sure they do what they pretend to do.
 - Make sure every time that your code is consistent and the naming pattern is respected.
 
+
+## [Multiple returns statements are a bad ideea](https://www.yegor256.com/2015/08/18/multiple-return-statements-in-oop.html)
+
+- a return method should only have a single return statement and nothing else.
+- any other operators and statements are against object-oriented programming.
+Below you'll observe 3 cases.
+
+1 - a classic example of a return method.
+```
+public int max(int a, int b) {
+  if (a > b) {
+    return a;
+  }
+  return b;
+}
+```
+2 - a more readable, easy-to-understand, and well-written code of the same function.
+```
+public int max(int a, int b) {
+  int m;
+  if (a > b) {
+    m = a;
+  } else {
+    m = b;
+  }
+  return m;
+}
+```
+3 - Even a better code with a single return statement.
+```
+public int max(int a, int b) {
+  return new If(
+    new GreaterThan(a, b),
+    a, b
+  );
+}
+```
+- As a conclusion of all of the above, in the future, try to use only one return statement with no other complications and do it in one-line code if it's possible. It will be easy to read, easy to maintain, and easy to understand.
+
 ###### Here is a long and detailed lesson about [Bad and unmaintainable code](https://github.com/Droogans/unmaintainable-code)
