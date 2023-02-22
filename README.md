@@ -13,3 +13,4 @@ In this repository, I'll upload the programming articles that I read with a summ
 - [Refactoring](https://github.com/bogdanterzea/Learning/blob/master/Refactoring.md)
 - [Communication](https://github.com/bogdanterzea/Learning/blob/master/Communication.md)
 - [Clean Architecture](https://github.com/bogdanterzea/Learning/blob/master/clean_architecture/CleanArchitecture.md)
+- [Design Patterns](https://github.com/bogdanterzea/Learning/blob/master/DesignPatterns.md)
